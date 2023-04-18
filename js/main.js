@@ -7,15 +7,16 @@
 //Creazione Email (Array)
 const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icloud.com', 'antoniogirolamo@email.com' ];
 
-let tuaEmail = document.getElementById('emailInserita').innerHTML;
-console.log(tuaEmail);
 
 let buttonLogin = document.getElementById('login');
 
-let identificazioneEmail = false;
-
 buttonLogin.addEventListener(`click`,
 function(){
+    
+    let tuaEmail = document.getElementById('emailInserita').value;
+    console.log(tuaEmail);
+
+    let identificazioneEmail = false;
 
 for (let i = 0; i < email.length; i++) {
     var Mail = email[i];
