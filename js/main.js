@@ -10,9 +10,9 @@ const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icl
 let tuaEmail = document.getElementById('emailInserita').innerHTML;
 console.log(tuaEmail);
 
-var buttonLogin = document.getElementById('login');
+let buttonLogin = document.getElementById('login');
 
-var identificazioneEmail = false;
+let identificazioneEmail = false;
 
 buttonLogin.addEventListener(`click`,
 function(){
