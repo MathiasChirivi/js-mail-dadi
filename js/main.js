@@ -7,7 +7,7 @@
 //Creazione Email (Array)
 const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icloud.com', 'antoniogirolamo@email.com' ];
 
-let tuaEmail = prompt("Inserisci qua la tua email per controllare se sei in lista.").value;
+let tuaEmail = prompt("Inserisci qua la tua email per controllare se sei in lista.");
 console.log(tuaEmail);
 
 let identificazioneEmail = false;
@@ -22,7 +22,7 @@ for (let i = 0; i < email.length; i++) {
 }
     let identificazione = email;
 
-    if(identificazione == true){
+    if(identificazioneEmail == true){
         alert('Benvenuto, sei libero di accedere')
     } else {
         alert('non sei registrato è pregato di aggiungere un email esistente')
