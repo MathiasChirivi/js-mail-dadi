@@ -7,10 +7,10 @@
 //Creazione Email (Array)
 const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icloud.com', 'antoniogirolamo@email.com' ];
 
-var tuaEmail = prompt("Inserisci qua la tua email per controllare se sei in lista.").value;
+let tuaEmail = prompt("Inserisci qua la tua email per controllare se sei in lista.").value;
 console.log(tuaEmail);
 
-var identificazioneEmail = false;
+let identificazioneEmail = false;
 
 for (let i = 0; i < email.length; i++) {
     var Mail = email[i];
@@ -20,9 +20,9 @@ for (let i = 0; i < email.length; i++) {
         identificazioneEmail = true;
     }
 }
-    var identificazione = email;
+    let identificazione = email;
 
-    if(identificazioneEmail == true){
+    if(identificazione == true){
         alert('Benvenuto, sei libero di accedere')
     } else {
         alert('non sei registrato è pregato di aggiungere un email esistente')
