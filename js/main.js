@@ -7,10 +7,15 @@
 //Creazione Email (Array)
 const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icloud.com', 'antoniogirolamo@email.com' ];
 
-let tuaEmail = prompt("Inserisci qua la tua email per controllare se sei in lista.");
+let tuaEmail = document.getElementById('emailInserita').innerHTML;
 console.log(tuaEmail);
 
-let identificazioneEmail = false;
+var buttonLogin = document.getElementById('login');
+
+var identificazioneEmail = false;
+
+buttonLogin.addEventListener(`click`,
+function(){
 
 for (let i = 0; i < email.length; i++) {
     var Mail = email[i];
@@ -20,10 +25,12 @@ for (let i = 0; i < email.length; i++) {
         identificazioneEmail = true;
     }
 }
-    let identificazione = email;
-
     if(identificazioneEmail == true){
-        alert('Benvenuto, sei libero di accedere')
-    } else {
-        alert('non sei registrato è pregato di aggiungere un email esistente')
+       console.log('Benvenuto');
+       document.getElementById('Identificato').innerHTML = (`Benvenuto : ${tuaEmail}`);
+    } else{
+        console.log('L email inserita non è corretta ')
+        document.getElementById('nonIdentificato').innerHTML = (`Email non presente del DataBase`);
     }
+  }
+)
