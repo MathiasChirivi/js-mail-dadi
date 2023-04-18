@@ -9,6 +9,7 @@ const email = ['chirivimathias@gmail.com', 'mathiaschirivi@gmail.com', 'luca@icl
 
 
 let buttonLogin = document.getElementById('login');
+let buttonClear = document.getElementById('clear');
 
 buttonLogin.addEventListener(`click`,
 function(){
@@ -34,4 +35,13 @@ for (let i = 0; i < email.length; i++) {
         document.getElementById('nonIdentificato').innerHTML = (`Email non presente del DataBase`);
     }
   }
+)
+
+buttonClear.addEventListener(`click`,
+function(){
+    document.getElementById('Identificato').innerHTML = '';
+    document.getElementById('nonIdentificato').innerHTML = '';
+    document.getElementById('emailInserita').value = '';
+}
+
 )

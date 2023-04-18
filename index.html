@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-    <input type="text" id="emailInserita" placeholder="Inserisci la Tua Email">
-    <button type="button" id="login">Login</button>
-
-    <span id="Identificato"></span>
-    <span id="nonIdentificato"></span>
+    <header>
+        <h3>INSERISCI L'EMAIL DELL'INVITO</h3>
+    </header>
+    <div class="inputText">
+        <input type="email" id="emailInserita" placeholder="Inserisci la Tua Email">
+    </div>
+    <div class="btn">
+        <button type="button" id="login">Login</button>
+        <button type="button" id="clear">Clear</button>
+    </div>
+    <div class="answer">
+        <div id="Identificato"></div>
+        <div id="nonIdentificato"></div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
